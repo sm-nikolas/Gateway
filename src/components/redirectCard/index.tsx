@@ -8,9 +8,11 @@ interface Props {
   name: string;
   perfilElement: any;
   style: string;
+  description: string;
+  icon: string;
 }
 
-const CardButton = ({ name, perfilElement, style }: Props) => {
+const CardButton = ({ name, perfilElement, style, description, icon }: Props) => {
   const element = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
@@ -30,9 +32,9 @@ const CardButton = ({ name, perfilElement, style }: Props) => {
   return (
     <div className="button" id={name} ref={element}>
       <div className="button-wrapper">
-        <div className="text">Download</div>
+        <div className="text">{description}</div>
         <div className="icon">
-          <img src={downloadIcon} />
+          <img src={icon} />
         </div>
       </div>
     </div>

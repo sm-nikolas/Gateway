@@ -3,26 +3,24 @@ body {
   padding: 0;
   margin: 0;
   background-color: #2e2e36;
+  height: 100vh;
+}
+
+.App{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .card {
-  padding-top: 5vh;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
 
-.div-border-hover-a {
-  border: 15px #bbbbbb !important;
-  border-style: outset !important;
-  background: linear-gradient(-45deg, #35353d, #d1d1d16e) !important;
-  box-shadow: 5px 5px 45px #d1d1d16e, -5px -5px 45px #d1d1d16e !important;
+.circle-figure{
+  padding-bottom: 25%;
 }
 
-.div-border-hover-b {
-  border: 15px #6c18ff !important;
-  border-style: outset !important;
-  background: linear-gradient(-45deg, #35353d, #2718ff6e) !important;
-  box-shadow: 5px 5px 45px #2718ff6e, -5px -5px 45px #2718ff6e !important;
-}

@@ -1,25 +1,12 @@
-.circleInfo {
-  border-radius: 50%;
-  background: #2e2e36;
-  box-shadow: inset 5px 5px 10px #27272d, inset -5px -5px 10px #35353f;
-  height: 200px;
-  width: 200px;
-  margin-top: 5%;
-  margin-bottom: 5%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .div-border {
   border-top-left-radius: 50%;
   border-top-right-radius: 50%;
   border-bottom-left-radius: 40%;
   border-bottom-right-radius: 40%;
-  border: 15px #9f0fff;
+  border: 15px #6e40c4;
   border-style: outset;
-  background: linear-gradient(-45deg, #35353d, #7f0fff7c);
-  box-shadow: 5px 5px 45px #7f0fff7c, -5px -5px 45px #7f0fff7c;
+  background: linear-gradient(-45deg, #35353d,#6e40c4a9);
+  box-shadow: 5px 5px 45px #6e40c4a9, -5px -5px 45px #6e40c4a9;
   height: 152px;
   width: 152px;
   margin-top: 5%;
@@ -28,6 +15,27 @@
   align-items: center;
   justify-content: center;
   transition: 0.3s;
+}
+
+.div-border-hover-linkedin{
+  border: 15px #0275b4 !important;
+  border-style: outset !important;
+  background: linear-gradient(-45deg, #35353d, #0276b491) !important;
+  box-shadow: 5px 5px 45px #0276b491, -5px -5px 45px #0276b491 !important;
+}
+
+.div-border-hover-gitHub {
+  border: 15px #272727 !important;
+  border-style: outset !important;
+  background: linear-gradient(-45deg, #35353d, #ffffff44) !important;
+  box-shadow: 5px 5px 45px #ffffff44, -5px -5px 45px #ffffff44 !important;
+}
+
+.div-border-hover-instagram {
+  border: 15px #e13ef0 !important;
+  border-style: outset !important;
+  background: linear-gradient(-45deg, #35353d, #e13ef07e) !important;
+  box-shadow: 5px 5px 45px #e13ef07e, -5px -5px 45px #e13ef07e !important;
 }
 
 .imgPerfil {
@@ -45,8 +53,4 @@
     height: 190px;
     padding-top: 6px;
   }
-}
-
-.button:hover + .div-border {
-  border: 15px #37ff0f;
 }

@@ -23,21 +23,23 @@
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 } */
 
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;700&display=swap');
+
 .button {
   --width: 300px;
   --height: 50px;
-  --button-color: #6515c0;
-  --margin-button: 1%;
+  --button-color: #6e40c4;
+  --margin-button: 10%;
   width: var(--width);
   height: var(--height);
   background: var(--button-color);
   position: relative;
   text-align: center;
   border-radius: 0.45em;
-  font-family: "Arial";
+  font-family: 'Quicksand', sans-serif;
+  font-weight: bold;
   transition: background 0.3s;
   cursor: pointer;
-  margin-top: var(--margin-button);
   margin-bottom: var(--margin-button);
 }
 
@@ -83,15 +85,22 @@
 }
 
 .icon {
-  color: #fff;
   top: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.button:hover {
-  background: #6c18ff;
+#linkedin:hover{
+  background: #0275b4;
+}
+
+#gitHub:hover {
+  background: #000000;
+}
+
+#instagram:hover{
+  background: #e13ef0;
 }
 
 .button:hover .text {
@@ -114,4 +123,11 @@
 
 .button:hover:before {
   bottom: var(--height);
+}
+
+
+@media (max-width: 480px) {
+  .button {
+    --margin-button: 15%;
+  }
 }

@@ -10,9 +10,17 @@ interface Props {
   style: string;
   description: string;
   icon: string;
+  link: string;
 }
 
-const CardButton = ({ name, perfilElement, style, description, icon }: Props) => {
+const CardButton = ({
+  name,
+  perfilElement,
+  style,
+  description,
+  icon,
+  link,
+}: Props) => {
   const element = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
@@ -29,9 +37,15 @@ const CardButton = ({ name, perfilElement, style, description, icon }: Props) =>
     };
   }, [element]);
 
+  const handlePageLink = () => {
+    setTimeout(() => {
+      window.open(link);
+    }, 550);
+  };
+
   return (
-    <div className="button" id={name} ref={element}>
-      <div className="button-wrapper">
+    <div className="button" role="button" id={name} ref={element}>
+      <div className="button-wrapper" onClick={() => handlePageLink()}>
         <div className="text">{description}</div>
         <div className="icon">
           <img src={icon} />

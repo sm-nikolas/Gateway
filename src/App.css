@@ -6,21 +6,33 @@ body {
   height: 100vh;
 }
 
-.App{
+.App {
   height: 100vh;
   display: flex;
-  align-items: center;
   justify-content: center;
 }
 
 .card {
+  display: grid;
+}
+
+.circle-figure {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 20%;
+}
+
+.buttons-card {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
 
-.circle-figure{
-  padding-bottom: 25%;
+.credit {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 15%;
 }
-

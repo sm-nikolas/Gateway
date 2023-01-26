@@ -5,7 +5,7 @@
   border-bottom-right-radius: 40%;
   border: 15px #6e40c4;
   border-style: outset;
-  background: linear-gradient(-45deg, #35353d,#6e40c4a9);
+  background: linear-gradient(-45deg, #35353d, #6e40c4a9);
   box-shadow: 5px 5px 45px #6e40c4a9, -5px -5px 45px #6e40c4a9;
   height: 152px;
   width: 152px;
@@ -17,7 +17,7 @@
   transition: 0.3s;
 }
 
-.div-border-hover-linkedin{
+.div-border-hover-linkedin {
   border: 15px #0275b4 !important;
   border-style: outset !important;
   background: linear-gradient(-45deg, #35353d, #0276b491) !important;

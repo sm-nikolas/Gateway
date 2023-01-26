@@ -23,20 +23,20 @@
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 } */
 
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;700&display=swap");
 
 .button {
   --width: 300px;
   --height: 50px;
   --button-color: #6e40c4;
-  --margin-button: 10%;
+  --margin-button: 2%;
   width: var(--width);
   height: var(--height);
   background: var(--button-color);
   position: relative;
   text-align: center;
   border-radius: 0.45em;
-  font-family: 'Quicksand', sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-weight: bold;
   transition: background 0.3s;
   cursor: pointer;
@@ -91,16 +91,19 @@
   justify-content: center;
 }
 
-#linkedin:hover{
+#linkedin:hover {
   background: #0275b4;
+  box-shadow: 5px 5px 15px #0276b491, -5px -5px 15px #0276b491 !important;
 }
 
 #gitHub:hover {
   background: #000000;
+  box-shadow: 5px 5px 15px #ffffff44, -5px -5px 15px #ffffff44 !important;
 }
 
-#instagram:hover{
+#instagram:hover {
   background: #e13ef0;
+  box-shadow: 5px 5px 15px #e13ef07e, -5px -5px 15px #e13ef07e !important;
 }
 
 .button:hover .text {
@@ -124,7 +127,6 @@
 .button:hover:before {
   bottom: var(--height);
 }
-
 
 @media (max-width: 480px) {
   .button {
